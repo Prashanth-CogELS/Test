@@ -65,8 +65,9 @@
                         <webservice.connectTimeout>${performancetest.connectTimeout}</webservice.connectTimeout>
                         <webservice.responseTimeout>${performancetest.responseTimeout}</webservice.responseTimeout>
                         <threadCount>${performancetest.threadCount}</threadCount>
-                        <loopCount>${performancetest.threadCount}</loopCount>
-						<ExamGroupID>${performancetest.ExamGroupID}</ExamGroupID>
+                        <loopCount>${performancetest.loopCount}</loopCount>
+			<ExamGroupID>${performancetest.ExamGroupID}</ExamGroupID>
+			<RampUpPeriod>${performancetest.RampupPeriod}</RampUpPeriod>    
                     </propertiesUser>
                     <propertiesJMeter>
                         <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
