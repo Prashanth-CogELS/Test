@@ -43,7 +43,7 @@
                 <performancetest.webservice.port>80</performancetest.webservice.port>
                 <performancetest.threadCount>5</performancetest.threadCount>
                 <performancetest.loopCount>5</performancetest.loopCount>
-				<performancetest.ExamGroupID>10</performancetest.ExamGroupID>
+		<performancetest.ExamGroupID>10</performancetest.ExamGroupID>
             </properties>
         </profile>
     </profiles>
@@ -58,19 +58,34 @@
                     <overrideRootLogLevel>DEBUG</overrideRootLogLevel>
                     <suppressJMeterOutput>false</suppressJMeterOutput>
                     <ignoreResultFailures>true</ignoreResultFailures>
-                    <propertiesUser>
+                   <propertiesUser>
                         <webservice.host>${performancetest.webservice.host}</webservice.host>
                         <webservice.port>${performancetest.webservice.port}</webservice.port>
                         <webservice.path>${performancetest.webservice.path}</webservice.path>
                         <webservice.connectTimeout>${performancetest.connectTimeout}</webservice.connectTimeout>
                         <webservice.responseTimeout>${performancetest.responseTimeout}</webservice.responseTimeout>
-                        <threadCount>${performancetest.threadCount}</threadCount>
-                        <loopCount>${performancetest.loopCount}</loopCount>
-			<ExamGroupID>${performancetest.ExamGroupID}</ExamGroupID>
-			<RampUpPeriod>${performancetest.RampupPeriod}</RampUpPeriod>    
+                             <threadCount>${performancetest.threadCount}</threadCount>
+                             <loopCount>${performancetest.loopCount}</loopCount>
+			     <jmeter.save.saveservice.bytes>true</jmeter.save.saveservice.bytes>
+                             <jmeter.save.saveservice.latency>true</jmeter.save.saveservice.latency>
+                             <jmeter.save.saveservice.response_code>true</jmeter.save.saveservice.response_code>
+                             <jmeter.save.saveservice.response_message>true</jmeter.save.saveservice.response_message>
+                             <jmeter.save.saveservice.successful>true</jmeter.save.saveservice.successful>
+                             <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
+                             <jmeter.save.saveservice.thread_name>true</jmeter.save.saveservice.thread_name>
+                             <jmeter.save.saveservice.time>true</jmeter.save.saveservice.time>
+                             <jmeter.save.saveservice.output_format>csv</jmeter.save.saveservice.output_format>
+                             <jmeter.save.saveservice.label>true</jmeter.save.saveservice.label>
+                             <jmeter.save.saveservice.timestamp_format>yyyy/MM/dd HH:mm:ss</jmeter.save.saveservice.timestamp_format>
+                             <jmeter.save.saveservice.assertion_results_failure_message>true</jmeter.save.saveservice.assertion_results_failure_message>
                     </propertiesUser>
                     <propertiesJMeter>
                         <jmeter.save.saveservice.thread_counts>true</jmeter.save.saveservice.thread_counts>
+                        <jmeter.save.saveservice.output_format>csv</jmeter.save.saveservice.output_format>
+                        <jmeter.save.saveservice.print_field_names>true</jmeter.save.saveservice.print_field_names>
+                        <jmeter.save.saveservice.successful>true</jmeter.save.saveservice.successful>
+                        <jmeter.save.saveservice.label>true</jmeter.save.saveservice.label>
+                        <jmeter.save.saveservice.time>true</jmeter.save.saveservice.time>     
                     </propertiesJMeter>
                     <jmeterPlugins>
                         <plugin>
